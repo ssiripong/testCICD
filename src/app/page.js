@@ -3,7 +3,9 @@ import axios from 'axios';
 
 export default function Home() {
   const handleClick = async () => {
-    const response = await axios.get('http://localhost:3000/api/get');
+    const response = await axios.get(
+      'https://test-cicd-beta.vercel.app/api/get'
+    );
     console.log(response.data);
   };
 
